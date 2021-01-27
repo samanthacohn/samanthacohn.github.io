@@ -27,9 +27,9 @@
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
         
         
-        createCannon("top", 450);
-        createCannon("left",500);
-        createCannon("left", 400);
+        createCannon("top", 460, 5);
+        createCannon("bottom",120, 10);
+        createCannon("right", 110, 10);
         
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
