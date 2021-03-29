@@ -22,7 +22,7 @@ var init = function (window) {
         // TODO 1 : Declare and initialize our variables
         var circle;
         var circles = [] ;
-
+        var rightEdge = circle.x + circle.radius;
         // TODO 2 : Create a function that draws a circle 
         var drawCircle = function() {
             circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
@@ -32,12 +32,12 @@ var init = function (window) {
         }
 
         // TODO 3 / 7 : Call the drawCircle() function 
-       drawCircle();
-       drawCircle();
-       drawCircle();
-       drawCircle();
-       drawCircle();
+       var loopsCompleted = 0;
+       for (var loopsCompleted= 0;loopsCompleted < 10; loopsCompleted++); {
+           
+       } 
 
+       
 
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -57,6 +57,12 @@ var init = function (window) {
             physikz.updatePosition(circles[4]);
             
             // TODO 5 : Call game.checkCirclePosition() on your circles.
+           game.checkCirclePosition([0]);
+           game.checkCirclePosition([1]);
+           game.checkCirclePosition([2]);
+           game.checkCirclePosition([3]);
+           game.checkCirclePosition([4]);
+
            
 
             // TODO 8 : Iterate over the array
@@ -77,13 +83,12 @@ var init = function (window) {
             }
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-            canvas.width
-            canvas.height
-
-            circle.x
-            circle.y
-            circle.radius
-
+            
+            
+           if (circle.y > canvas. height ) {
+                  circle.y = 0;
+           }
+           
 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
         }
