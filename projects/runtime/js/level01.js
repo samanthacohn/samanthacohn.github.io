@@ -32,7 +32,7 @@ var level01 = function (window) {
         var damageFromObstacle = 10;
         var sawBladeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
         sawBladeHitZone.x = 400;
-        sawBladeHitZone.y = 150;
+        sawBladeHitZone.y = 198;
         game.addGameItem(sawBladeHitZone);
         var obstacleImage = draw.bitmap('img/sawblade.png');
         sawBladeHitZone.addChild(obstacleImage);
@@ -45,12 +45,28 @@ var level01 = function (window) {
     createSawBlade();
     createSawBlade();
     
+     function createMyObstacle(x,y) {
+    // code for creating myObstacle
+};
+    createMyObstacle(100,200);
          
+    var enemy = game.createGameItem('enemy',25);
+    var redSquare = draw.rect(50,50,'red');
+    redSquare.x = -25;
+    redSquare.y = -25;
+    enemy.addChild(redSquare);
     
+        enemy.x = 400;
+        enemy.y = groundY-50;
+        
+        game.addGameItem(enemy);
+         enemy.velocityX = -5;
+
         
         
-        // DO NOT EDIT CODE BELOW HERE
+         // DO NOT EDIT CODE BELOW HERE
     }
+   
 };
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////

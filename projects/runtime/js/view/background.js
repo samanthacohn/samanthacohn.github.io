@@ -65,7 +65,7 @@ var background = function (window) {
             
             // TODO 4: Part 1 - Add a tree
             tree.x = 798;
-            tree.y = 43;
+            tree.y = groundY - 100;
             background.addChild(tree);
                         
         } // end of render function - DO NOT DELETE
