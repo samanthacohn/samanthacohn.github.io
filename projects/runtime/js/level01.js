@@ -24,7 +24,6 @@ var level01 = function (window) {
         window.levelData = levelData;
         // set this to true or false depending on if you want to see hitzones
         game.setDebugMode(false);
-
         // TODO 6 and on go here
         // BEGIN EDITING YOUR CODE HERE
     function createSawBlade(x,y){
@@ -44,6 +43,7 @@ var level01 = function (window) {
     createSawBlade();
     createSawBlade();
     createSawBlade();
+    //add arguments to these above!!
     
      function createMyObstacle(x,y) {
     // code for creating myObstacle
@@ -61,11 +61,38 @@ var level01 = function (window) {
         
         game.addGameItem(enemy);
          enemy.velocityX = -5;
+    enemy.onPlayerCollision = function() {
+    console.log('The enemy has hit Halle');
+    game.changeIntegrity(-10)
+    game.increaseScore(100);
+    enemy.fadeOut();
+    };
+//////customize the enemy tonight!!!!
 
-        
-        
-         // DO NOT EDIT CODE BELOW HERE
+    function createEnemy(x,y){
+        enemy.velocityX = -5;
+        enemy.onPlayerCollision = function() {
+        console.log('The enemy has hit Halle');
+        game.changeIntegrity(-10)
+        game.increaseScore(100);
+        enemy.fadeOut();
+    };
+    createEnemy(400,groundY-10);
+    createEnemy(800,groundY-100);
+    createEnemy(1200,groundY-50);   
     }
+        
+}
+         
+    //enemy.onPlayerCollision = function() {
+    //console.log('The enemy has hit Halle');
+    
+     
+         
+         
+     // DO NOT EDIT CODE BELOW HERE
+    
+
    
 };
 
