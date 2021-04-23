@@ -99,13 +99,12 @@ var level01 = function (window) {
         enemy.velocityX = -3;
         enemy.onPlayerCollision = function() {
         console.log('The enemy has hit Halle');
-        game.changeIntegrity(-10)
+        game.changeIntegrity(-10);
         game.increaseScore(100);
         enemy.fadeOut();
     };
      enemy.onProjectileCollision = function() {
         console.log('Halle has hit the enemy');
-        game.changeIntegrity(-10)
         enemy.fadeOut();
     };
 };
@@ -127,7 +126,7 @@ var level01 = function (window) {
         enemy.velocityX = -3;
         enemy.onPlayerCollision = function() {
         console.log('The enemy has hit Halle');
-        game.changeIntegrity(50)
+        game.changeIntegrity(50);
         game.increaseScore(100);
         enemy.fadeOut();
         };
