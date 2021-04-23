@@ -85,9 +85,11 @@ var level01 = function (window) {
 
     function createEnemy(x,y){
        var enemy = game.createGameItem('enemy',25);
-        var redSquare = draw.rect(50,50,'red');
+        var redSquare = draw.bitmap('img/dogenemy.png');
         redSquare.x = -25;
         redSquare.y = -25;
+        redSquare.scaleX = 0.2;
+        redSquare.scaleY = 0.2;
         enemy.addChild(redSquare);
         
         enemy.x = x;
@@ -111,9 +113,11 @@ var level01 = function (window) {
     
     function createHealth(x,y){
        var enemy = game.createGameItem('enemy',25);
-        var redSquare = draw.rect(50,50,'green');
+        var redSquare = draw.bitmap('img/health.png');
         redSquare.x = -25;
         redSquare.y = -25;
+        redSquare.scaleX = 0.08;
+        redSquare.scaleY = 0.08;
         enemy.addChild(redSquare);
         
         enemy.x = x;
