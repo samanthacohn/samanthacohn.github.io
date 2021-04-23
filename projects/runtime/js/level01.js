@@ -19,9 +19,35 @@ var level01 = function (window) {
                 { "type": "sawblade", "x": 400, "y": groundY - 50 },
                 { "type": "sawblade", "x": 700, "y": groundY - 30 },
                 { "type": "sawblade", "x": 1000, "y": groundY - 40 },
-                { "type": "reward", "x": 1500, "y": groundY - 60},
-                { "type": "customObstacle", "x": 850, "y": groundY - 20},
+                { "type": "reward", "x": 2000, "y": groundY - 60},
+                { "type": "customObstacle", "x": 1650, "y": groundY - 20},
                 { "type": "Enemy", "x": 1200, "y": groundY - 50},
+                { "type": "Enemy", "x": 1800, "y": groundY - 50},
+                { "type": "Enemy", "x": 3950, "y": groundY - 50},
+                { "type": "Enemy", "x": 2700, "y": groundY - 50},
+                { "type": "Enemy", "x": 2900, "y": groundY - 50},
+                { "type": "Enemy", "x": 3700, "y": groundY - 50},
+                { "type": "Enemy", "x": 4400, "y": groundY - 50},
+                { "type": "Enemy", "x": 4950, "y": groundY - 50},
+                { "type": "Enemy", "x": 5400, "y": groundY - 50},
+                { "type": "Enemy", "x": 5999, "y": groundY - 50},
+                { "type": "reward", "x": 4100, "y": groundY - 60},
+                { "type": "customObstacle", "x": 5650, "y": groundY - 20},
+                { "type": "customObstacle", "x": 5950, "y": groundY - 20},
+                { "type": "customObstacle", "x": 4950, "y": groundY - 20},
+                { "type": "customObstacle", "x": 4900, "y": groundY - 20},
+                { "type": "customObstacle", "x": 6100, "y": groundY - 20},
+                { "type": "customObstacle", "x": 6200, "y": groundY - 20},
+                { "type": "customObstacle", "x": 6300, "y": groundY - 20},
+                { "type": "customObstacle", "x": 6600, "y": groundY - 20},
+                { "type": "customObstacle", "x": 6800, "y": groundY - 20},
+                { "type": "reward", "x": 4700, "y": groundY - 60},
+                { "type": "reward", "x": 4100, "y": groundY - 60},
+                { "type": "reward", "x": 5600, "y": groundY - 60},
+                { "type": "reward", "x": 6850, "y": groundY - 60},
+        
+        
+
             ]
         };
         for (var i = 0; i < levelData.gameItems.length;i++) {
